@@ -10,6 +10,6 @@
         },
         "principalId":{
             "type":"String",
-            "value":"94cb8929-3575-4d02-8959-a5b369edc7e7"
+            "description":"object ID of principal used to run this code"
         }
     }}
