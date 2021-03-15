@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="FluentAssertions" Version="5.10.3" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="5.0.4" />
+        <PackageReference Include="Moq" Version="4.16.1" />
+        <PackageReference Include="NUnit" Version="3.12.0" />
+        <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+        <PackageReference Include="SpecFlow" Version="3.7.13" />
+        <PackageReference Include="SpecFlow.NUnit" Version="3.7.13" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Tacx.Activities.Api\Tacx.Activities.Api.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <SpecFlowFeatureFiles Update="Features\Activities.feature">
+        <CodeBehindFile>Features/Activities.feature.cs</CodeBehindFile>
+      </SpecFlowFeatureFiles>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Features\Activities.feature.cs">
+        <DependentUpon>Activities.feature</DependentUpon>
+        <AutoGen>true</AutoGen>
+        <DesignTime>true</DesignTime>
+        <Visible>true</Visible>
+      </Compile>
+    </ItemGroup>
+
+</Project>

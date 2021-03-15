@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tacx.Activities.Api", "Tacx.Activities.Api\Tacx.Activities.Api.csproj", "{EB3418A5-0E61-44E3-B738-D8DE5ACC43E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tacx.Activities.Api.AcceptanceTests", "Tacx.Activities.Api.AcceptanceTests\Tacx.Activities.Api.AcceptanceTests.csproj", "{7BFEB25A-253B-4511-82F6-C0B8D38E7BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tacx.Activities.Api.Core", "Tacx.Activities.Api.Core\Tacx.Activities.Api.Core.csproj", "{3C99A727-7699-4AE8-B5F8-93C9EB0A3373}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tacx.Activities.Api.SmokeTests", "Tacx.Activities.Api.SmokeTests\Tacx.Activities.Api.SmokeTests.csproj", "{737AF98F-B303-4F9F-BAEC-1B9CEB8E048F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{7C9FDDDC-6F49-4947-88FE-0856C545AB40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tacx.Activities.Api.Adapters", "Tacx.Activities.Api.Adapters\Tacx.Activities.Api.Adapters.csproj", "{DE19A37A-01D0-4A9F-BB64-837958D3268A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tacx.Activities.Api.AdapterTests", "Tacx.Activities.Api.AdapterTests\Tacx.Activities.Api.AdapterTests.csproj", "{D57E04DD-4D0A-463C-BBF6-E999FA6B08F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB3418A5-0E61-44E3-B738-D8DE5ACC43E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3418A5-0E61-44E3-B738-D8DE5ACC43E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3418A5-0E61-44E3-B738-D8DE5ACC43E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3418A5-0E61-44E3-B738-D8DE5ACC43E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFEB25A-253B-4511-82F6-C0B8D38E7BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFEB25A-253B-4511-82F6-C0B8D38E7BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFEB25A-253B-4511-82F6-C0B8D38E7BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFEB25A-253B-4511-82F6-C0B8D38E7BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C99A727-7699-4AE8-B5F8-93C9EB0A3373}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C99A727-7699-4AE8-B5F8-93C9EB0A3373}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C99A727-7699-4AE8-B5F8-93C9EB0A3373}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C99A727-7699-4AE8-B5F8-93C9EB0A3373}.Release|Any CPU.Build.0 = Release|Any CPU
+		{737AF98F-B303-4F9F-BAEC-1B9CEB8E048F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737AF98F-B303-4F9F-BAEC-1B9CEB8E048F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737AF98F-B303-4F9F-BAEC-1B9CEB8E048F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737AF98F-B303-4F9F-BAEC-1B9CEB8E048F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE19A37A-01D0-4A9F-BB64-837958D3268A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE19A37A-01D0-4A9F-BB64-837958D3268A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE19A37A-01D0-4A9F-BB64-837958D3268A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE19A37A-01D0-4A9F-BB64-837958D3268A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57E04DD-4D0A-463C-BBF6-E999FA6B08F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57E04DD-4D0A-463C-BBF6-E999FA6B08F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57E04DD-4D0A-463C-BBF6-E999FA6B08F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57E04DD-4D0A-463C-BBF6-E999FA6B08F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12B2E825-6FF5-45DD-A411-C67704135146}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BFEB25A-253B-4511-82F6-C0B8D38E7BAA} = {7C9FDDDC-6F49-4947-88FE-0856C545AB40}
+		{737AF98F-B303-4F9F-BAEC-1B9CEB8E048F} = {7C9FDDDC-6F49-4947-88FE-0856C545AB40}
+		{D57E04DD-4D0A-463C-BBF6-E999FA6B08F2} = {7C9FDDDC-6F49-4947-88FE-0856C545AB40}
+	EndGlobalSection
+EndGlobal
