@@ -28,6 +28,10 @@ namespace Tacx.Activities.Api.Controllers
         public async Task<IActionResult> GetActivityById(string id)
         {
             var activity = await _activityService.GetById(id);
+            if (activity == null)
+            {
+                return NotFound();
+            }
             return Ok(ActivityRequestMapper.Map(activity));
         }
 

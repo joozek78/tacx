@@ -1,4 +1,5 @@
 using System;
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
@@ -31,8 +32,19 @@ namespace Tacx.Activities.Api.Adapters.Cosmos
 
         public async Task<Activity> GetById(string activityId)
         {
-            var response = await _activityContainer.ReadItemAsync<ActivityDocument>(activityId, new PartitionKey(activityId));
-            return ActivityDocumentMapper.Map(response.Resource);
+            try
+            {
+                var response = await _activityContainer.ReadItemAsync<ActivityDocument>(activityId, new PartitionKey(activityId));
+                return ActivityDocumentMapper.Map(response.Resource);
+            }
+            catch (CosmosException e)
+            {
+                if (e.StatusCode == HttpStatusCode.NotFound)
+                {
+                    return null;
+                }
+                throw;
+            }
         }
     }
 }

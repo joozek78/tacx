@@ -77,6 +77,26 @@ namespace Tacx.Activities.Api.AdapterTests
             var returnedItem = (await _activityContainer.ReadItemAsync<Activity>(activity.ActivityId, new PartitionKey(activity.ActivityId))).Resource;
             returnedItem.Should().BeEquivalentTo(activity);
         }
+        
+        [Test]
+        public async Task ShouldGetExistingActivity()
+        {
+            string id = GenerateId();
+            _createdItemId = id;
+            await _activityContainer.UpsertItemAsync(new {id, ActivityId = id});
+
+            var actualActivity = await _sut.GetById(id);
+
+            actualActivity.ActivityId.Should().Be(id);
+        }
+
+        [Test]
+        public async Task ShouldReturnNullWhenActivityDoesntExist()
+        {
+            var actual = await _sut.GetById(GenerateId());
+
+            actual.Should().BeNull();
+        }
 
         [Test]
         public async Task ShouldDeleteActivity()
